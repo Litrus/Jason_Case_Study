@@ -24,8 +24,18 @@ I have been asked to analyze smart device data (fitBit dataset) to gain insight 
 <br/><br/>
 ## About the Data
 ### Source
+Data has been provided by Bellabeat via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) through Amazon Mturk (3rd party source). The dataset contains personal fitness tracking data from 33 fitbit users. Users have consented to submission of personal tracker data for research purposes.
+
 ### Storage
+I have downloaded the dataset from Kaggle, onto my PC and then stored it into Microsoft SQL servers. Each table is stored in a long format. The data is accessible through SQL Server Management Studio (SSMS) by Microsoft.
+
 ### Limitations
+- The sample size is too small (33) to represent a proper population and will have a high margin of error if used for real world project purposes.
+- The dataset does not specify demographic information such as: age, sex, ethnicity, etc...
+- The dataset is outdated (2016) for the current date.
+- The dataset comes from a 3rd party provider (Amazon Mturk), so there is no way to check validity or bias of surveying methods during the surveying process.
+- The metadata is vague. Data pertaining to sleep is not explained how it is collected or how their algorithm functions (Is sleep determined by a user's heart rate or movement? If someone is sedentary, how does it differentiate between sleep and sedentary?). Does not specify how steps are tracked, just that they are and that users can also input their steps tracked.
+
 ### Cleaning process & change log
 
 <br/><br/>
