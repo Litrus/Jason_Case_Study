@@ -34,7 +34,7 @@ I have downloaded the dataset from Kaggle, onto my PC and then stored it into Mi
 - The dataset does not specify demographic information such as: age, sex, ethnicity, etc...
 - The dataset is outdated (2016) for the current date.
 - The dataset comes from a 3rd party provider (Amazon Mturk), so there is no way to check validity or bias of surveying methods during the surveying process.
-- The metadata is vague. Data pertaining to sleep is not explained how it is collected or how their algorithm functions (Is sleep determined by a user's heart rate or movement? If someone is sedentary, how does it differentiate between sleep and sedentary?). Does not specify how steps are tracked, just that they are and that users can also input their steps tracked.
+- The metadata is vague. Data pertaining to sleep is not explained how it is collected or how their algorithm functions (Is sleep determined by a user's heart rate or movement? If someone is sedentary, how does it differentiate between a sleeping state and a sedentary state?). Does not specify how steps are tracked, just that they are and that users can also input their steps tracked.
 
 ### Cleaning process & change log
 
