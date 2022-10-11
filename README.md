@@ -48,6 +48,17 @@ To ensure my analysis would not get cluttered with unnecessary data and tables, 
 <br/><br/>
 ## Analysis
 ### Key points
+- Daily Activity Summary
+  - Of the 3 exercise intensities (Light, moderate and intense), Light activity is the most common, followed by Intense and then moderate. On a weekly basis, light activity had an average of **25.04** hours a week, followed by Intense at **2.74** hours a week and moderate at **1.76** hours a week.
+  - KM Travelled wise, the trend is the same wherein; light activity is the most commmon and then intense, moderate. The KM's travelled per week are as follows: **26.04** - light, **11.69** - intense, **4.46** moderate.
+  - The most popular day for exercise appears to be Saturday, where saturday has the highest average steps, light activity and moderate activity, calories burnt and light and moderate KM travelled. Saturday meets the max of each weekday for 6/8 catagories. The least popular day appears to be friday, where friday has the lowest values of exercise for 5/8 catagories.
+  - Friday and monday are the laziest days, where each day has an average sedentary hours spent at **16.38** and **16.37**.
+
+- Sleep Activity Summary
+  - Sunday is the laziest day, with the highest recorded hours asleep and in bed at **7.5** hours and **8.25** hours respectively.
+  - The most active days were tied between friday and thursday, where their lowest recorded values were **6.69** hours asleep on average for both days, **7.26** hours spent in bed on friday and **7.25** hours spent in bed on thursday.
+  - In a weeks average, participants were recorded to have slept **48.61** or **6.94** hours a day and spent an average **52.94** hours a week in bed (inclusive of time asleep) or **7.57** hours a day.
+
 ### Visualisation
 
 <br/><br/>
