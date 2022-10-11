@@ -42,8 +42,8 @@ The dataset was downloaded from Kaggle and stored into Microsoft SQL servers.
 To ensure my analysis would not get cluttered with unnecessary data and tables, I chose to limit which tables I was going to use for analysis. For the purposes of my case study, I opted to use the following 3 tables: [dailyActivity_merged](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/dailyActivity_merged.csv), [sleepDay_merged](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/sleepDay_merged.csv) and [weightLogInfo_merged](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/weightLogInfo_merged.csv). These 3 tables contain the most relevant data for my study, as the other tables are essentially broken down versions of the dailyActivity table. The other tables are too in-depth for the business goal and are better suited for non-marketing purposes.
 
 - **Duplicate** rows have been checked for in all 3 tables with only a few occurences in one table; sleepDay_merged. To fix this, I moved the data into a new Table called sleepDay. Any further cleaning would be done in this table instead of being migrated.
-- 
-
+- **Incomplete, Inaccurate and inconsistent** data has been filtered out of the raw dataset by applying filters relating to: steps recorded, minutes spent in a sedentary state and calories burnt. This filter basically removed any data that had rows containing a 0 or max value for the row entered, data that did not make sense such as someone being sedentary for 24 hours and rows that were automatically recorded by the fitBit device despite having improper or no values. This process also indirectly removed outstanding outliers, if there were any as it would filter out non-sensical data too.
+- **Adjusting and converting** Columns to become more user friendly and certain data types to ensure certain math functions would work properly on them. Dates were converted into their relative weekday in order to apply aggregation on the data and to catagorize it. This would allow me to pull summary data from the table and also point out key facts pertaining to each table, where needed.
 
 <br/><br/>
 ## Analysis
