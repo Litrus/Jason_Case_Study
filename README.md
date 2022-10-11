@@ -38,6 +38,9 @@ The dataset was downloaded from Kaggle and stored into Microsoft SQL servers.
 - The dataset comes from a 3rd party provider (Amazon Mturk), so there is a lack of integrity.
 - The metadata is vague. Data pertaining to sleep is not explained; how it is collected or how their algorithm functions (Is sleep determined by a user's heart rate or movement? If someone is sedentary, how does it differentiate between sleeping and sedentary?). Does not specify how steps are tracked, just that they are and that users can also input their steps tracked.
 
+### Assumptions/Notes
+- The level of activity is not specified in the dataset (light, moderate and very active), however having searched it up online, fitBase have provided an updated medadata PDF outlining that each level is as followed: <3 MET's, 3-6 MET's and >6 MET's, which are a unit of measurement for [exercise intensity](https://www.healthline.com/health/what-are-mets).
+
 ### Data cleaning report
 To ensure my analysis would not get cluttered with unnecessary data and tables, I chose to limit which tables I was going to use for analysis. For the purposes of my case study, I opted to use the following 3 tables: [dailyActivity_merged](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/dailyActivity_merged.csv), [sleepDay_merged](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/sleepDay_merged.csv) and [weightLogInfo_merged](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/weightLogInfo_merged.csv). These 3 tables contain the most relevant data for my study, as the other tables are essentially broken down versions of the dailyActivity table. The other tables are too in-depth for the business goal and are better suited for non-marketing purposes.
 
