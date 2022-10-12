@@ -65,6 +65,7 @@ To ensure my analysis would not get cluttered with unnecessary data and tables, 
 ### Visualisation
 #### Exercise type popularity
 ![avgHours](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/AvgIntenseHours.PNG)
+Light activity is predominantly the most popular choice, followed by intense and then moderate. Users seem to exercise a lot during the middle of the week and at the end of the week
 
 <br/><br/>
 ## Conclusion
