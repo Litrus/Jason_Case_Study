@@ -63,6 +63,7 @@ To ensure my analysis would not get cluttered with unnecessary data and tables, 
   - In a weeks average, participants were recorded to have slept **48.61** or **6.94** hours a day and spent an average **52.94** hours a week in bed (inclusive of time asleep) or **7.57** hours a day.
 
 ### Visualisation
+#### Weekly Average Activity Intensity Hours
 
 <br/><br/>
 ## Conclusion
