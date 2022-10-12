@@ -1,0 +1,13 @@
+﻿dayOfWeek,TotalAsleepHours,TotalBedHours,MeanHoursAsleep,MeanBedHours
+Friday   ,374.44,406.77,6.69,7.26
+Monday   ,308.38,334.59,6.85,7.44
+Saturday ,386.12,420.84,6.89,7.52
+Sunday   ,405.23,445.5,7.5,8.25
+Thursday ,428.06,463.86,6.69,7.25
+Tuesday  ,438.27,480.24,6.74,7.39
+Wednesday,478.21,517.02,7.25,7.83
+
+(7 rows affected)
+
+
+Completion time: 2022-10-10T18:29:50.9658371-04:00
