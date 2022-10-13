@@ -77,7 +77,7 @@ Again, light activity is the predominant activity level recorded for the amount 
 
 #### Calories burnt on a daily basis
 ![calories](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesBurnt2.png)
-Users again tending to exercise/burn the most amount of calories on saturday and tuesday.
+Users again tending to exercise/burn the most amount of calories on Tuesday and Saturday.
 <br/><br/>
 
 #### Calories burnt relative to steps
@@ -139,7 +139,7 @@ The weight log table was left out by choice, due to an underwhelming amount of r
 
 ### Recommendations
 #### Balancing wellness with exercise
-Currently, Bellabeat focuses simply on wellness and data recording. Their primary product is the [health tracker](https://bellabeat.com/catalog/), the Leaf Chakra or Leaf Urban. Their other products are simply accessories for the Leaf device. While they understand the importance of wellness and even provide a [how to wellness page](https://bellabeat.com/journal/), they don't push for products that motivate women to exercise more. Bellabeat could emphasize on this by engineering exercise gear, tailored towards women. These products could be something as simple as Bellabeat Joggers, fitness apparel or even a drink bottle to encourage physical activity.
+Currently, Bellabeat focuses simply on wellness and data recording. Their primary product is the [health tracker](https://bellabeat.com/catalog/), the Leaf Chakra or Leaf Urban. Their other products are simply accessories for the Leaf device. While they understand the importance of wellness and even provide a [how to wellness page](https://bellabeat.com/journal/), they should push for products that motivate women to exercise more. Bellabeat could emphasize on this by engineering gear, tailored towards more intensive and even moderate exercise. These products could be something as simple as Bellabeat Joggers, fitness apparel or even a drink bottle to encourage physical activity.
 
 #### Encouraging sleep
 While sleep does not appear to be much of a problem in the data, the [CDC](https://www.cdc.gov/sleep/features/getting-enough-sleep.html) recommends that adults 18-60 get at least 7+ hours of sleep per night. The sleep graph indicates that users are only 7+ hours of sleep on 2/7 days of the week. With many studies on effects of sleep relative to weight loss and better health, Bellabeat should definitely encourage users to record sleep activity more and encourage people to sleep more each night when possible. Bellabeat already has a mobile app called Bellabeat Wellness Coach, they should emphasize on their app and inform users about the importance of sleep relative to health and wellness.
