@@ -68,39 +68,81 @@ The analysis was carried out in a combination of SQL, Google Sheets and Tableau.
 #### Exercise type popularity (Hours spent)
 ![avgHours](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/IntensityHours.png)
 Light activity is predominantly the most popular choice, followed by intense and then moderate. Users seem to exercise a lot on Tuesday and Saturday.
+<br/><br/>
 
 #### Exercise type popularity (KM Travelled)
 ![avgKM](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/IntensityKMTravelled.PNG)
 Again, light activity is the predominant activity level recorded for the amount of KM's travelled by an individual on average. The trend here is the same as the hours spent where the most popular day for exercise is Tuesday, followed by Saturday.
+<br/><br/>
 
 #### Calories burnt on a daily basis
 ![calories](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesBurnt2.png)
 Users again tending to exercise/burn the most amount of calories on saturday and tuesday.
+<br/><br/>
 
 #### Calories burnt relative to steps
 <img src="https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesVsSteps2.PNG" align="left"/>
 Calories burnt relative to steps does indeed show a slight positive linear slope. Although the R coefficient is low, the statistical significance is probably high. Users are more likely to burn calories if they increase their step count everyday.
 <br clear="left"/>
+<br/><br/>
 
 #### Effect of different levels of activity on amoutn of calories burnt 
 ![CaloriesActivity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesActivityCombined.PNG)
-The comparison of each activity level reveals that the highest intensity of activity has the greatest positive association with calories burnt. Light and moderate are quite close together in terms of trends. This could be explained by the fact that moderate activity in hours only has **554 rows** when entries of 0 are filtered out and light activity has **843 rows**. Light activity or [<3 MET's](https://www.healthline.com/health/what-are-mets#examples) as defined by healthline, is activity described as: sitting at a desk, sitting while playing cards, standing at a desk, washing dishes and various other sitting activites. Becaues the 
+The comparison of each activity level reveals that the highest intensity of activity has the greatest positive association with calories burnt. Light and moderate are quite close together in terms of trends. This could be explained by the fact that moderate activity in hours only has **554 rows** when entries of 0 are filtered out and light activity has **843 rows**. Light activity or [<3 MET's](https://www.healthline.com/health/what-are-mets#examples) as defined by healthline, is activity described as: sitting at a desk, sitting while playing cards, standing at a desk, washing dishes and various other sitting activites. Due to the nature of light activity, this category will almost always have a non-zero entry and could possibly skew the outcome of any function.
+<br/><br/>
 
 #### Calories burnt while sedentary
 ![CaloriesSedentary](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesVsSedentary2.PNG)
 
+Not strong enough to prove any hypothesis about the correlation between hours spent idle and calories burnt.
+<br/><br/>
+
+
 #### Time spent asleep daily
 ![Sleep](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/TimeAsleep.png)
+
+Where Tuesday and Saturday are supposedly the hot days for exercise, the respective following days of both are also the seemingly laziest. Wednesday and Sunday both top the hours spent asleep at **7.24** and **7.50** respectively.
+<br/><br/>
 
 #### Time asleep relative to calories burnt
 ![SleepCalories](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/SleepVsCalories.PNG)
 
+No noticeable trend between calories burnt and hours slept.
+<br/><br/>
+
 #### Effect of time spent asleep on different levels of activity
 ![SleepActivity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/SleepActivityCombined.PNG)
+
+Unlike calories burnt, sleep definitely does not seem to have an effect on how much each type of exercise is done on average. The moderate activity hours graph shows a slightly negative slope, but the R coefficient is too small to be able to confirm anything.
+<br/><br/>
 
 #### Hours delegated by users to each activity on a weekly basis
 ![Hours](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/HoursDivided.PNG)
 
+Almost **3/4** of user's time was spent in a sedentary state. Almost **1/5** of those hours were spent doing light activity. Moderate and Intense levels of exercise only took up a combined **4.5%** of people's weekly exercise. From the pivot tables generated, each activity in order of most to least hours respectively: **12.01, 3.65, 0.43 and 0.30** hours are spent on each activity per week, on average. The [CDC](https://www.cdc.gov/physicalactivity/basics/adults/index.htm) recommends that adults need at least 150 minutes or 2.5 hours of moderate-intense levels of physical activity. Combined, moderate and intense hours recorded only total 0.73, almost 2 hours short of the recommended amount.
+<br/><br/>
+
 <br/><br/>
 ## Conclusion
+### Activity
+- There is shown to be positive linearity between calories burnt and intensive activity or even walking.
+- Users prefer intense activity over moderate. Intense activity is shown to be effective in burning calories. However, the amount of hours spent in a week on either exercise is no where near CDC's recommended amount.
+- There is no consistent pattern of days where people choose to exercise. This could be capitalised on and could encourage users to spread or manage their exercise schedules better.
+- Time spend sedentary takes up almost 75% of a users activity cycle. This could be improved.
+
+### Sleep
+- Sleep data did not reveal any noticeable trends.
+- Just like activity data, there were favourable days of sleep for users; the days following the most active exercise days. This could also be an opportunity for growth, where users could manage their sleep patterns better.
+
+### Weight log
+The weight log table was left out by choice, due to an underwhelming amount of records. None of the weight records were taken into account when conducting analysis, as there was insufficient rows to actually allow any kind of useful inner join. There could be a lot of improvement to data regarding weight, such as user incentives to record their own weights. The automatic reporting feature does not help to smooth the data and only creates more error in data cleaning and analyzing. 
+
 ### Recommendations
+#### Balancing wellness with exercise
+Currently, Bellabeat focuses simply on wellness and data recording. Their primary product is the [health tracker](https://bellabeat.com/catalog/), the Leaf Chakra or Leaf Urban. Their other products are simply accessories for the Leaf device. While they understand the importance of wellness and even provide a [how to wellness page](https://bellabeat.com/journal/), they don't push for products that motivate women to exercise more. Bellabeat could emphasize on this by engineering exercise gear, tailored towards women. These products could be something as simple as Bellabeat Joggers, fitness apparel or even a drink bottle to encourage physical activity.
+
+#### Encouraging sleep
+While sleep does not appear to be much of a problem in the data, the [CDC](https://www.cdc.gov/sleep/features/getting-enough-sleep.html) recommends that adults 18-60 get at least 7+ hours of sleep per night. The sleep graph indicates that users are only 7+ hours of sleep on 2/7 days of the week. With many studies on effects of sleep relative to weight loss and better health, Bellabeat should definitely encourage users to record sleep activity more and encourage people to sleep more each night when possible. Bellabeat already has a mobile app called Bellabeat Wellness Coach, they should emphasize on their app and inform users about the importance of sleep relative to health and wellness.
+
+#### Weight positivity
+Weight positivty is another important factor that Bellabeat could emphasize on, as there is great potential for growth in this area of Bellabeat's wellness line. Bellabeat should push for body image positivity and let users know that their data is safe. Small things like motivational messages through their app could be a good motivator for people to start recording weight data more often.
