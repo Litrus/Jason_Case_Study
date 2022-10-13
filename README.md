@@ -78,7 +78,12 @@ Again, light activity is the predominant activity level recorded for the amount 
 Users again tending to exercise/burn the most amount of calories on saturday and tuesday.
 
 #### Calories burnt relative to steps
-![caloriesSteps]()
+<img src="https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesVsSteps2.PNG" align="left"/>
+Calories burnt relative to steps does indeed show a slight positive linear slope. Although the R coefficient is low, the statistical significance is probably high. Users are more likely to burn calories if they increase their step count everyday.
+<br clear="left"/>
+
+#### Calories burnt relative to each level of activity intensity
+![CaloriesIntensity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesActivityCombined.PNG)
 
 <br/><br/>
 ## Conclusion
