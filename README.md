@@ -84,6 +84,7 @@ Calories burnt relative to steps does indeed show a slight positive linear slope
 
 #### Effect of different levels of activity on amoutn of calories burnt 
 ![CaloriesActivity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesActivityCombined.PNG)
+The comparison of each activity level reveals that the highest intensity of activity has the greatest positive association with calories burnt. Light and moderate are quite close together in terms of trends. This could be explained by the fact that moderate activity in hours only has **554 rows** when entries of 0 are filtered out and light activity has **843 rows**. Light activity or [<3 MET's](https://www.healthline.com/health/what-are-mets#examples) as defined by healthline, is activity described as: sitting at a desk, sitting while playing cards, standing at a desk, washing dishes and various other sitting activites. Becaues the 
 
 #### Calories burnt while sedentary
 ![CaloriesSedentary](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesVsSedentary2.PNG)
