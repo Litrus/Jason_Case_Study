@@ -97,7 +97,7 @@ Calories burnt relative to steps does indeed show a slight positive linear slope
 #### Effect of time spent asleep on different levels of activity
 ![SleepActivity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/SleepActivityCombined.PNG)
 
-#### Hours delegated by users to each activity on a daily basis
+#### Hours delegated by users to each activity on a weekly basis
 ![Hours](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/HoursDivided.PNG)
 
 <br/><br/>
