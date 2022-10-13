@@ -82,8 +82,23 @@ Users again tending to exercise/burn the most amount of calories on saturday and
 Calories burnt relative to steps does indeed show a slight positive linear slope. Although the R coefficient is low, the statistical significance is probably high. Users are more likely to burn calories if they increase their step count everyday.
 <br clear="left"/>
 
-#### Calories burnt relative to each level of activity intensity
-![CaloriesIntensity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesActivityCombined.PNG)
+#### Effect of different levels of activity on amoutn of calories burnt 
+![CaloriesActivity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesActivityCombined.PNG)
+
+#### Calories burnt while sedentary
+![CaloriesSedentary](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/CaloriesVsSedentary2.PNG)
+
+#### Time spent asleep daily
+![Sleep](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/TimeAsleep.png)
+
+#### Time asleep relative to calories burnt
+![SleepCalories](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/SleepVsCalories.PNG)
+
+#### Effect of time spent asleep on different levels of activity
+![SleepActivity](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/SleepActivityCombined.PNG)
+
+#### Hours delegated by users to each activity on a daily basis
+![Hours](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/HoursDivided.PNG)
 
 <br/><br/>
 ## Conclusion
