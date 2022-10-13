@@ -50,6 +50,8 @@ To ensure my analysis would not get cluttered with unnecessary data and tables, 
 
 <br/><br/>
 ## Analysis
+The analysis was carried out in a combination of SQL, Google Sheets and Tableau. I used SQL to merge the dailyActivity and sleepDay tables together in order to assess the data from both tables at once. I exported each cleaned set out of SQL and then imported them to both Tableau and Sheets. I used sheets to create summary pivot tables and to gather the averages of each column of data, which allowed me to extract vital key points and figures. These figures allowed me to determine popular trends among the data in the bullet points below. I also used Sheets to create numerous scatter plots, comparing many numerical variables to determine any trends. Tableau was used to visualise the differences between catagorical data, namely the Activity hours columns and the KM travelled columns.
+
 ### Key points
 - Daily Activity Summary
   - Of the 3 exercise intensities (Light, moderate and intense), Light activity is the most common, followed by Intense and then moderate. On a weekly basis, light activity had a total average of **25.04** hours a week, followed by Intense at **2.74** hours a week and moderate at **1.76** hours a week.
@@ -63,9 +65,15 @@ To ensure my analysis would not get cluttered with unnecessary data and tables, 
   - In a weeks average, participants were recorded to have slept **48.61** or **6.94** hours a day and spent an average **52.94** hours a week in bed (inclusive of time asleep) or **7.57** hours a day.
 
 ### Visualisation
-#### Exercise type popularity
+#### Exercise type popularity (Hours spent)
 ![avgHours](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/AvgIntenseHours.PNG)
-Light activity is predominantly the most popular choice, followed by intense and then moderate. Users seem to exercise a lot during the middle of the week and at the end of the week
+Light activity is predominantly the most popular choice, followed by intense and then moderate. Users seem to exercise a lot on Tuesday and Saturday.
+
+#### Exercise type popularity (KM Travelled)
+![avgKM](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/IntensityKMTravelled.PNG)
+Again, light activity is the predominant activity level recorded for the amount of KM's travelled by an individual on average. The trend here is the same as the hours spent where the most popular day for exercise is Tuesday, followed by Saturday.
+
+
 
 <br/><br/>
 ## Conclusion
