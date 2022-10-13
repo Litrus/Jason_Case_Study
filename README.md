@@ -69,11 +69,15 @@ The analysis was carried out in a combination of SQL, Google Sheets and Tableau.
 ![avgHours](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/AvgIntenseHours.PNG)
 Light activity is predominantly the most popular choice, followed by intense and then moderate. Users seem to exercise a lot on Tuesday and Saturday.
 
+UPDATE THIS TO LOOK SAME AS KM
+
 #### Exercise type popularity (KM Travelled)
 ![avgKM](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/IntensityKMTravelled.PNG)
 Again, light activity is the predominant activity level recorded for the amount of KM's travelled by an individual on average. The trend here is the same as the hours spent where the most popular day for exercise is Tuesday, followed by Saturday.
 
-
+#### Calories 
+![calories]()
+UPDATES CALORIES HERE
 
 <br/><br/>
 ## Conclusion
