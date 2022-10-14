@@ -1,5 +1,5 @@
 # Google Data Analytics Capstone Project - Bellabeat Wellness
-##### A capstone project by Jason Qu 
+##### A capstone project by Jason Qu.
 ## Introduction 
 This capstone project is the final case study of the Google Data Analytics Course provided via Coursera. This case study entails what I have learnt throughout the Google Data Analytics course as well as the application of business concepts and skills that I have learnt during my time in University.
 
@@ -23,6 +23,9 @@ I have been asked to analyze smart device data (fitBit dataset) to gain insight 
 
 <br/><br/>
 ## About the Data
+### CHANGELOG
+[Click here for all the queries I ran, with rough documentation](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/FitBase_Queries.sql)
+
 ### Source
 Data has been provided by Bellabeat via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) through Amazon Mturk (3rd party source). The dataset contains personal fitness tracking data from 33 fitbit users. Users have consented to submission of personal tracker data for research purposes. Due to the nature of the data source, I am unable to verify the integrity of the data and whether or not it has been subjected to any kind of bias.
 
@@ -50,7 +53,9 @@ To ensure my analysis would not get cluttered with unnecessary data and tables, 
 
 <br/><br/>
 ## Analysis
-The analysis was carried out in a combination of SQL, Google Sheets and Tableau. I used SQL to merge the dailyActivity and sleepDay tables together in order to assess the data from both tables at once. I exported each cleaned set out of SQL and then imported them to both Tableau and Sheets. I used sheets to create summary pivot tables and to gather the averages of each column of data, which allowed me to extract vital key points and figures. These figures allowed me to determine popular trends among the data in the bullet points below. I also used Sheets to create numerous scatter plots, comparing many numerical variables to determine any trends. Tableau was used to visualise the differences between catagorical data, namely the Activity hours columns and the KM travelled columns.
+The analysis was carried out in a combination of SQL, Google Sheets and Tableau. I used SQL to merge the dailyActivity and sleepDay tables together in order to assess the data from both tables at once. I exported each cleaned set out of SQL and then imported them to both Tableau and Sheets. I used sheets to create summary pivot tables and to gather the averages of each column of data, which allowed me to extract vital key points and figures. These figures allowed me to determine popular trends among the data in the bullet points below. I also used Sheets to create numerous scatter plots, comparing many numerical variables to determine any trends. Tableau was used to visualise the differences between catagorical data, namely the Activity hours columns and the KM travelled columns. 
+
+The [changelog](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/FitBase_Queries.sql) is available here.
 
 ### Key points
 - Daily Activity Summary
