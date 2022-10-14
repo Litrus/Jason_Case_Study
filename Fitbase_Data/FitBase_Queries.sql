@@ -19,7 +19,7 @@ ON da.Id = sd.Id
 --Unnecessary query that verifies the existence of all Id's in the weight log table, corresponding to Id's in the daily activity and sleep table
 --A left join here would show every Id existing in the activity table and their correspondants in the other 2 tables if they exist
 --an inner join would show if the Id exists in all 3 tables and truncate those that do not have rows in all tables 
---This query reveals that all id’s in daily activity overlap with the id’s in the other two tables, so there are no more than 33 unique id’s.
+--This query reveals that all idâ€™s in daily activity overlap with the idâ€™s in the other two tables, so there are no more than 33 unique idâ€™s.
 
 ALTER TABLE weightLogInfo_merged
 ALTER COLUMN Date date NOT NULL
@@ -101,7 +101,7 @@ TrackerDistance = ROUND(TrackerDistance, 2),
 VeryActiveDistance = ROUND(VeryActiveDistance, 2),
 ModeratelyActiveDistance = ROUND(ModeratelyActiveDistance, 2),
 LightActiveDistance = ROUND(LightActiveDistance, 2)
---Rounding each recorded distance two the nearest 2 decimal place
+--Rounding each recorded distance to the nearest 2 decimal place
 
 UPDATE weightLog
 SET
@@ -143,20 +143,25 @@ ADD dayOfWeek char(9)
 
 UPDATE dailyActivity
 SET dayOfWeek = DATENAME(weekday, ActivityDate)
---adding a new column to reflect the dates as the weekday. Repeated for every table
+--adding a new column to reflect the dates as the weekday. This will allow me to aggregate the data based on the weekday. Repeat for every table
 
 END OF DATA CLEANING
-Exporting cleaned tables into CSV’s and then transferring to Tableau/Sheets for analysis and visualisation
+Exporting cleaned tables into CSVâ€™s and then transferring to Tableau/Sheets for analysis and visualisation
+
 SELECT * 
 FROM dailyActivity
 ORDER BY Id, ActivityDate 
+
 SELECT * 
 FROM sleepDay
 ORDER BY Id, SleepDay
+
 SELECT * 
 FROM weightLog
 ORDER BY Id, Date 
+
 All exported into CSV formats and ready to be analyzed
+
 SELECT dayOfWeek WeekDay, SUM(TotalSteps) TotalSteps, SUM(Calories) TotalCaloriesBurnt, SUM(LiteActiveKM) TotalLiteActiveKM, 
 SUM(ModerateActiveKM) TotalModeratelyActiveKM, SUM(VeryActiveKM) TotalVeryActiveKM, SUM(LiteActiveHR) TotalLiteActiveHours, SUM(ModerateActiveHR) TotalModeratelyActiveHours, 
 SUM(VeryActiveHR) TotalVeryActiveHours, SUM(SedentaryHR) TotalSedentaryHours, AVG(TotalSteps) MeanSteps, AVG(Calories) MeanCaloriesBurnt,
@@ -166,7 +171,7 @@ ROUND(AVG(SedentaryHR), 2) MeanSedentaryHours
 FROM dailyActivity
 GROUP BY dayOfWeek
 --Query to pull summary data from the dailyActivity table.
---This newly generated table will be used to create the visualisations and point out key points in the data
+--This newly generated table will be used to point out key points in the data
 
 SELECT dayOfWeek, SUM(HoursAsleep) TotalAsleepHours, SUM(HoursInBed) TotalBedHours, ROUND(AVG(HoursAsleep), 2) MeanHoursAsleep, ROUND(AVG(HoursInBed), 2) MeanBedHours
 FROM sleepDay
@@ -178,4 +183,4 @@ INNER JOIN sleepDay sd
 ON da.Id = sd.Id AND da.ActivityDate = sd.SleepDay
 --Merging the tables for analysis 
 
-Records from everything have been exported in a CSV file. The summary data will be put into a pivot table and then made into graphs with google sheets. The cleaned tables will be loaded into tableau for visualisation.
+Records from everything have been exported into a CSV file.The cleaned tables will be loaded into Google Sheets and Tableau for analysis and visualisation.
