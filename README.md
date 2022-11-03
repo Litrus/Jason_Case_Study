@@ -4,7 +4,7 @@
 This capstone project is the final case study of the Google Data Analytics Course provided via Coursera. This case study entails what I have learnt throughout the Google Data Analytics course as well as the application of business concepts and skills that I have learnt during my time in University.
 
 ### Bellabeat Wellness
-Bellabeat Wellness is a health and wellness brand, designed for women. The company develops wearables and acommpanying products that monitor biometrics and lifestyle data in order to empower women by helping them understand how their bodies work and to make healthier lifestyle choices. Their vision is to ["Empower women to reconnect with themselves"](https://bellabeat.com/about/). 
+Bellabeat Wellness is a health and wellness brand, designed for women. The company develops wearables and accompanying products that monitor biometrics and lifestyle data in order to empower women by helping them understand how their bodies work and to make healthier lifestyle choices. Their vision is to ["Empower women to reconnect with themselves"](https://bellabeat.com/about/). 
 
 <br/><br/>
 ## Business Task & Stakeholders
