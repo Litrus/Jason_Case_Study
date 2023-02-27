@@ -30,9 +30,9 @@ I have been asked to analyze smart device data (fitBit dataset) to gain insight 
 Data has been provided by Bellabeat via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) through Amazon Mturk (3rd party source). The dataset contains personal fitness tracking data from 33 fitbit users. Users have consented to submission of personal tracker data for research purposes. Due to the nature of the data source, I am unable to verify the integrity of the data and whether or not it has been subjected to any kind of bias.
 
 ### Storage
-For the purpose of this case study, I have opted for Microsoft's SQL Servers and SSMS because they allow me to view the data in a much cleaner format than Excel/Sheets/R Studio would, and allow me to manipulate and view the data quickly (Simple SQL queries to filter and sort than Excel/Sheets and cleaner than R). A cleaner and quicker view of the data helped me to decide what aspects of the data I believed should be cleaned. Excel/Sheets would have been a good option as well as there aren't many rows and visualisation could have been done in the same place. Doing the case study in SQL also allows me to document my process better than Excel/Sheets would.
+For the purpose of this case study, I have opted for Microsoft's SQL Servers and SSMS because they allow me to view the data in a much cleaner format than Excel/Sheets/R Studio would, and allow me to manipulate and view the data quickly (Simple SQL queries to filter and sort than Excel/Sheets and cleaner than R). A cleaner and quicker view of the data helped me to decide what aspects of the data I believed should be cleaned. Excel/Sheets would have been a good option as well as there aren't many rows and visualisation could have been done in the same place. Doing the case study in SQL also allows me to document my process better than Excel/Sheets would, as I can create and record each query on the fly.
 
-The dataset was downloaded from Kaggle and stored into Microsoft SQL servers.
+The dataset was downloaded from Kaggle and stored in Microsoft SQL servers.
 
 ### Limitations
 - The sample size is too small (33) to represent a proper population and will have a high margin of error if used for real world project purposes.
@@ -55,7 +55,7 @@ To ensure my analysis would not get cluttered with unnecessary data and tables, 
 ## Analysis
 The analysis was carried out in a combination of SQL, Google Sheets and Tableau. I used SQL to merge the dailyActivity and sleepDay tables together in order to assess the data from both tables at once. I exported each cleaned set out of SQL and then imported them to both Tableau and Sheets. I used sheets to create summary pivot tables and to gather the averages of each column of data, which allowed me to extract vital key points and figures. These figures allowed me to determine popular trends among the data in the bullet points below. I also used Sheets to create numerous scatter plots, comparing many numerical variables to determine any trends. Tableau was used to visualise the differences between catagorical data, namely the Activity hours columns and the KM travelled columns. 
 
-The [changelog](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/FitBase_Queries.sql) is available here.
+The changelog is available [here](https://github.com/Litrus/Jason_Case_Study/blob/main/Fitbase_Data/FitBase_Queries.sql).
 
 ### Key points
 - Daily Activity Summary
